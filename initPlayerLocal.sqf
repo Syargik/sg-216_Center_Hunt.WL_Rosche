@@ -4,6 +4,13 @@ if (!isDedicated) then {
 	player addEventHandler ["inventoryOpened","_nul=execVM 'script.sqf'"];
 };
 
+    	cTab_helmetClass_has_HCam = ["YGO_Beret_Black"];
+    [{
+      cTab_helmetClass_has_HCam isNotEqualTo ["YGO_Beret_Black"]
+    }, {
+      cTab_helmetClass_has_HCam = ["YGO_Beret_Black"];
+    }, [], 20] call CBA_fnc_waitUntilAndExecute;
+
 player createDiaryRecord ["diary", ["Форма сторон", loadFile "A3A_BRIEFING\briefing_UNIFORMS.html"]];
 
 if (side player == resistance) then {player createDiaryRecord ["diary", ["Задачи", loadFile "A3A_BRIEFING\briefing_OPFOR_TASKS.html"]]; player createDiaryRecord ["diary", ["Противник", loadFile "A3A_BRIEFING\briefing_OPFOR_ENEMY.html"]];};

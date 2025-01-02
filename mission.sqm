@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2184;
+		nextID=2188;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10998.167,128.9825,2378.6079};
-		dir[]={-0.46024674,-0.41756579,0.78347558};
-		up[]={-0.21150523,0.90864658,0.36004484};
-		aside[]={0.8622418,-1.6269041e-07,0.50651753};
+		pos[]={5385.1772,47.005516,600.02942};
+		dir[]={0.87457716,-0.33937219,0.34662077};
+		up[]={0.31553388,0.94064486,0.12505481};
+		aside[]={0.36847621,1.1235825e-06,-0.92972285};
 	};
 };
 binarizationWanted=0;
@@ -395,8 +395,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6969.5757,31.932865,3397.219};
-				angles[]={0,5.3998709,0};
+				position[]={6969.5762,31.932528,3397.219};
+				angles[]={0,5.3998742,0};
 			};
 			side="Empty";
 			class Attributes
@@ -405,7 +405,7 @@ class Mission
 			};
 			id=24;
 			type="Box_NATO_Equip_F";
-			atlOffset=4.0155773;
+			atlOffset=4.0152397;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -421,7 +421,20 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item8
@@ -437,7 +450,7 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
-				init="[this,""OPFOR"",""BTR""] call SerP_vehprocessor;";
+				init="[this,""OPFOR"",""BTR""] call SerP_vehprocessor;" \n "[this,""opCrew"", ""all""] call compile preprocessFileLineNumbers ""bn_crew_control.sqf"";";
 				textures="standard";
 			};
 			id=79;
@@ -980,7 +993,7 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
-				init="[this,""OPFOR"",""BTR""] call SerP_vehprocessor;";
+				init="[this,""OPFOR"",""BTR""] call SerP_vehprocessor;" \n "[this,""opCrew"", ""all""] call compile preprocessFileLineNumbers ""bn_crew_control.sqf"";";
 				textures="standard";
 			};
 			id=82;
@@ -1522,7 +1535,7 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
-				init="[this,""OPFOR"",""BTR""] call SerP_vehprocessor;";
+				init="[this,""OPFOR"",""BTR""] call SerP_vehprocessor;" \n "[this,""opCrew"", ""all""] call compile preprocessFileLineNumbers ""bn_crew_control.sqf"";";
 				textures="standard";
 			};
 			id=85;
@@ -6009,13 +6022,14 @@ class Mission
 				angles[]={0,3.4080269,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="[this]call BIS_fnc_replaceWithSimpleObject;";
 			};
 			id=1369;
 			type="Land_File_research_F";
-			atlOffset=0.0073890686;
+			atlOffset=7.6293945e-06;
 		};
 		class Item51
 		{
@@ -6032,7 +6046,7 @@ class Mission
 			};
 			id=1370;
 			type="Land_File1_F";
-			atlOffset=0.020488739;
+			atlOffset=0.011863708;
 		};
 		class Item52
 		{
@@ -10892,7 +10906,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor; " \n "";
+						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor; " \n "this setVariable [""opCrew"", true];";
 						description="1. Командир 1-го отделения 1-го мотопехотного взвода";
 						isPlayable=1;
 						receiveRemoteTargets=1;
@@ -11314,7 +11328,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor; " \n "";
+						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor; " \n "this setVariable [""opCrew"", true];";
 						description="9. Механик-водитель БТР-82А";
 						isPlayable=1;
 						class Inventory
@@ -11366,7 +11380,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW_H""] call SerP_unitprocessor; " \n "";
+						init="[this,""OPFOR"",""CREW_H""] call SerP_unitprocessor; " \n "this setVariable [""opCrew"", true];";
 						description="10. Наводчик-оператор БТР-82А";
 						isPlayable=1;
 						receiveRemoteTargets=1;
@@ -11434,7 +11448,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor; " \n "";
+						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor; " \n "this setVariable [""opCrew"", true];";
 						description="1. Командир 2-го отделения 1-го мотопехотного взвода";
 						isPlayable=1;
 						class Inventory
@@ -11702,14 +11716,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5503.0825,19.77533,669.54358};
-						angles[]={0,2.6135819,0};
+						position[]={5503.083,19.775335,669.54401};
+						angles[]={0,2.6135781,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor; " \n "";
+						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor; " \n "this setVariable [""opCrew"", true];";
 						description="9. Механик-водитель БТР-82А";
 						isPlayable=1;
 						class Inventory
@@ -11718,21 +11732,50 @@ class Mission
 					};
 					id=1957;
 					type="mkk_Survivor_O";
-					atlOffset=3.8146973e-06;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item9
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5505.0234,19.807467,670.67426};
-						angles[]={0,2.6135819,0};
+						position[]={5505.0229,19.807459,670.67401};
+						angles[]={0,2.6135781,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW_H""] call SerP_unitprocessor; " \n "";
+						init="[this,""OPFOR"",""CREW_H""] call SerP_unitprocessor; " \n "this setVariable [""opCrew"", true];";
 						description="10. Наводчик-оператор БТР-82А";
 						isPlayable=1;
 						class Inventory
@@ -11741,6 +11784,36 @@ class Mission
 					};
 					id=1958;
 					type="mkk_Survivor_O";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -11768,7 +11841,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor; " \n "";
+						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor; " \n "this setVariable [""opCrew"", true];";
 						description="1. Командир 3-го отделения 1-го мотопехотного взвода";
 						isPlayable=1;
 						class Inventory
@@ -12036,14 +12109,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5538.6147,20.443199,688.48737};
-						angles[]={0,2.6490836,0};
+						position[]={5538.6152,20.443203,688.487};
+						angles[]={0,2.6490784,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor; " \n "";
+						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor; " \n "this setVariable [""opCrew"", true];";
 						description="9. Механик-водитель БТР-82А";
 						isPlayable=1;
 						class Inventory
@@ -12052,20 +12125,50 @@ class Mission
 					};
 					id=1968;
 					type="mkk_Survivor_O";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item9
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5540.3384,20.475901,689.41528};
-						angles[]={0,2.6490836,0};
+						position[]={5540.3379,20.475893,689.41498};
+						angles[]={0,2.6490784,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW_H""] call SerP_unitprocessor; " \n "";
+						init="[this,""OPFOR"",""CREW_H""] call SerP_unitprocessor; " \n "this setVariable [""opCrew"", true];";
 						description="10. Наводчик-оператор БТР-82А";
 						isPlayable=1;
 						class Inventory
@@ -12074,6 +12177,36 @@ class Mission
 					};
 					id=1969;
 					type="mkk_Survivor_O";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
