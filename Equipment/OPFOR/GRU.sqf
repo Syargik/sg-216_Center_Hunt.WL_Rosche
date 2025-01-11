@@ -7,7 +7,7 @@ _unit addBackpack "B_Carryall_Base";
 _unit addItem "rhs_30Rnd_545x39_7N10_AK";
 _unit addWeapon "rhs_weap_ak105_zenitco01_b33";
 _unit addPrimaryWeaponItem "nmg_silence_dtk_gexagonak";
-_unit addPrimaryWeaponItem "vtn_optic_aimpoint_micro_t1b_g33";
+_unit addPrimaryWeaponItem "rhsusf_acc_eotech_xps3";
 
 removeBackpack _unit;
 

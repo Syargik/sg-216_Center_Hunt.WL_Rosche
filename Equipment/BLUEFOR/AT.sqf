@@ -25,7 +25,7 @@ for '_i' from 1 to 2 do { _unit addItemToVest 'rhs_mag_an_m8hc';};
 // Backpack with items:
 _unit addBackpack "BWA3_Kitbag_Fleck";
 for '_i' from 1 to 3 do { _unit addItemToBackpack  'mkk_pzf3_tandem';};
-_unit addHeadgear "PBW_Helm1_fleck_HBOD";
+_unit addHeadgear "PBW_Helm1_fleck_BO";
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";

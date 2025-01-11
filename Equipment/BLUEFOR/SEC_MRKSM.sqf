@@ -16,6 +16,7 @@ removeBackpack _unit;
 
 // Uniform with items:
 _unit forceAddUniform "PBW_Uniform3K_tropen";
+_unit addItemToUniform 'ACE_RangeCard';
 
 // Vest with items:
 _unit addVest "BWA3_Vest_JPC_Rifleman_Tropen";

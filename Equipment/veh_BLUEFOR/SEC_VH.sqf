@@ -15,5 +15,5 @@ _veh addItemCargoGlobal ["rhs_mag_m67", 15];
 _veh addItemCargoGlobal ["rhs_mag_an_m8hc", 15];
 _veh addItemCargoGlobal ['PBW_Helm1_tropen_H', 5];
 
-_veh addBackpackCargoGlobal ['BWA3_Kitbag_Fleck', 4];
+_veh addBackpackCargoGlobal ['BWA3_Kitbag_Fleck', 2];
 _veh addBackpackCargoGlobal ['mkk_mr3000_bwmod_blue', 1];

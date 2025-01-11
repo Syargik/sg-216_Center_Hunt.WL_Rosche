@@ -23,7 +23,7 @@ for '_i' from 1 to 2 do { _unit addItemToVest 'rhs_mag_an_m8hc';};
 _unit addBackpack "BWA3_Kitbag_Fleck";
 for '_i' from 1 to 10 do { _unit addItemToBackpack 'rhs_mag_M441_HE';};
 for '_i' from 1 to 5 do { _unit addItemToBackpack 'rhs_mag_M433_HEDP';};
-_unit addHeadgear "PBW_Helm1_fleck_HBOD";
+_unit addHeadgear "PBW_Helm1_fleck_BO";
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";

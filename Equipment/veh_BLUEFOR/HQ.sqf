@@ -12,5 +12,5 @@ _veh addItemCargoGlobal ['rhssaf_30rnd_556x45_EPR_G36', 30];
 _veh addItemCargoGlobal ["rhs_mag_m67", 15];
 _veh addItemCargoGlobal ["rhs_mag_an_m8hc", 15];
 
-_veh addBackpackCargoGlobal ['BWA3_Kitbag_Fleck', 4];
+_veh addBackpackCargoGlobal ['BWA3_Kitbag_Fleck', 2];
 _veh addBackpackCargoGlobal ['mkk_mr3000_bwmod_blue', 1];
