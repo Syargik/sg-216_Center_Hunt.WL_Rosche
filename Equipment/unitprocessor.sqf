@@ -26,3 +26,35 @@ if (isNil _svn) then
 };
 
 [_unit] call (missionNamespace getVariable [_svn, {}]);
+
+OPFORHELMETS = [
+	"rhs_6b27m_digi_bala",
+	"rhs_6b27m_digi_ess_bala"
+];
+
+OPFORUNIFORMS = [
+	"rhs_uniform_vkpo_gloves_alt",
+	"rhs_uniform_vkpo_alt"
+];
+
+BLUFORUNIFORMS = [
+	"PBW_Uniform3_fleck",
+	"PBW_Uniform3K_fleck",
+	"PBW_Uniform4_fleck",
+	"PBW_Uniform4K_fleck"
+];
+
+BLUFORHELMETS = [
+	"PBW_Helm1_fleck",
+	"PBW_Helm1_fleck_BUD",
+	"PBW_Helm1_fleck_BOD",
+	"PBW_Helm2_fleck",
+	"PBW_Helm2_fleck_BUD"
+];
+
+SECUNIFORMS = [
+	"PBW_Uniform3_tropen",
+	"PBW_Uniform3K_tropen",
+	"PBW_Uniform4_tropen",
+	"PBW_Uniform4K_tropen"
+];

@@ -9,11 +9,11 @@ _veh addItemcargoGlobal ['ACE_elasticBandage', 30];
 _veh addItemcargoGlobal ['ACE_packingBandage', 30];
 _veh addItemCargoGlobal ['ACE_splint', 10];
 
-_veh addItemCargoGlobal ['rhssaf_30rnd_556x45_EPR_G36', 10];
-_veh addItemCargoGlobal ['BWA3_10Rnd_762x51_G28', 5];
-_veh addItemCargoGlobal ['BWA3_200Rnd_556x45', 2];
+_veh addItemCargoGlobal ['rhs_30Rnd_545x39_7N10_AK', 10];
 
-_veh addItemCargoGlobal ["rhs_mag_m67", 5];
-_veh addItemCargoGlobal ["rhs_mag_an_m8hc", 5];
+_veh addItemCargoGlobal ['rhs_mag_rgd5', 5];
+_veh addItemCargoGlobal ['rhs_mag_rdg2_white', 5];
 
-_veh addItemCargoGlobal ["ace_mag_100rnd_127x99_mag_Tracer_Red", 6];
+_veh addBackpackCargoGlobal ['rhs_rk_sht_30_emr', 5];
+
+_veh addItemCargoGlobal ['ToolKit', 5];

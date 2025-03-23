@@ -1,3 +1,5 @@
+_uniform = SECUNIFORMS call BIS_fnc_selectRandom;
+
 // SolidGames
 
 _unit addBackpack "B_Carryall_Base";
@@ -12,10 +14,10 @@ _unit addPrimaryWeaponItem "rhsusf_acc_ACOG";
 removeBackpack _unit;
 
 // Uniform with items:
-_unit forceAddUniform "PBW_Uniform3K_tropen";
+_unit forceAddUniform _uniform;
 
 // Vest with items:
-_unit addVest "BWA3_Vest_JPC_Leader_Tropen";
+_unit addVest "BWA3_Vest_JPC_Rifleman_Tropen";
 for '_i' from 1 to 2 do { _unit addItemToVest 'rhs_mag_m67';};
 for '_i' from 1 to 2 do { _unit addItemToVest 'rhs_mag_an_m8hc';};
 for '_i' from 1 to 6 do { _unit addItemToVest 'rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan';};

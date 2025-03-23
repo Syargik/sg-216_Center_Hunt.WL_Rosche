@@ -1,3 +1,5 @@
+_uniform = OPFORUNIFORMS call BIS_fnc_selectRandom;
+
 // SolidGames
 
 _unit addBackpack "B_Carryall_Base";
@@ -11,7 +13,7 @@ _unit addPrimaryWeaponItem "rhs_acc_dtk1983";
 removeBackpack _unit;
 
 // Uniform with items:
-_unit forceAddUniform "rhs_uniform_vkpo_alt";
+_unit forceAddUniform _uniform;
 
 // Vest with items:
 _unit addVest "rhs_6b23_digi_6sh92_spetsnaz2";

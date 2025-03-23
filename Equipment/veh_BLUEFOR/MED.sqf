@@ -16,4 +16,5 @@ _veh additemcargoGlobal ['ACE_suture', 20];
 
 _veh addItemCargoGlobal ["rhs_mag_m67", 10];
 _veh addItemCargoGlobal ["rhs_mag_an_m8hc", 10];
+
 _veh addItemCargoGlobal ['rhssaf_30rnd_556x45_EPR_G36', 15];

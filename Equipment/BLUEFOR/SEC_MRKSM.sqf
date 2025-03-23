@@ -1,3 +1,5 @@
+_uniform = SECUNIFORMS call BIS_fnc_selectRandom;
+
 // SolidGames
 
 _unit addBackpack "B_Carryall_Base";
@@ -15,7 +17,7 @@ _unit addWeapon "ACE_Vector";
 removeBackpack _unit;
 
 // Uniform with items:
-_unit forceAddUniform "PBW_Uniform3K_tropen";
+_unit forceAddUniform _uniform;
 _unit addItemToUniform 'ACE_RangeCard';
 
 // Vest with items:

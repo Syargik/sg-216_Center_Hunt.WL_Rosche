@@ -12,6 +12,7 @@ if (!isServer) exitWith {};
 		(uniformContainer _x) additemcargoGlobal ["ACE_epinephrine", 2];
 		(uniformContainer _x) additemcargoGlobal ["ACE_splint", 2];
 		(uniformContainer _x) additemcargoGlobal ["ACE_EarPlugs", 1];
+		(uniformContainer _x) additemcargoGlobal ["ACE_painkillers", 1];
 	}
 	else
 	{
@@ -24,6 +25,7 @@ if (!isServer) exitWith {};
 		(uniformContainer _x) additemcargoGlobal ["ACE_epinephrine", 2];
 		(uniformContainer _x) additemcargoGlobal ["ACE_splint", 2];
 		(uniformContainer _x) additemcargoGlobal ["ACE_EarPlugs", 1];
+		(uniformContainer _x) additemcargoGlobal ["ACE_painkillers", 1];
 	};
 
         if (_x getVariable "ace_medical_medicClass" > 0) then {
@@ -36,8 +38,8 @@ if (!isServer) exitWith {};
                 (backpackContainer _x) additemcargoGlobal ["ACE_quikclot",10];
                 (backpackContainer _x) additemcargoGlobal ["ACE_epinephrine",10];
                 (backpackContainer _x) additemcargoGlobal ["ACE_morphine",10];
-                (backpackContainer _x) additemcargoGlobal ["ACE_salineIV_500",2];
-				(backpackContainer _x) additemcargoGlobal ["ACE_salineIV",3];
+                (backpackContainer _x) additemcargoGlobal ["ACE_salineIV_500",3];
+				(backpackContainer _x) additemcargoGlobal ["ACE_salineIV",2];
                 (backpackContainer _x) additemcargoGlobal ["ACE_tourniquet",10];
 				(backpackContainer _x) additemcargoGlobal ["ACE_personalAidKit",5];
                 (backpackContainer _x) additemcargoGlobal ["ACE_surgicalKit",1];

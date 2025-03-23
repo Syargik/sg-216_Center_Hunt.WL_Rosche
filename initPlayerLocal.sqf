@@ -1,4 +1,4 @@
-if (!isDedicated) then {	
+if (!isDedicated) then {
 	waitUntil {!(isNull player)};
 	player addEventHandler ["inventoryOpened","_nul=execVM 'script.sqf'"];
 };
@@ -14,9 +14,16 @@ if (hasInterface) then {
         "((_this distance target1) < 10) && (alive _this)",
         {},
         {},
-        {cutText ["Клаус Хаскендорф опознан!", "PLAIN"];target1k = true; publicvariable "target1k";},
+        {
+            cutText ["Клаус Хаскендорф опознан!", "PLAIN"];
+            target1k = true; 
+            publicvariable "target1k";
+        },
         {},
         [],
-        10,0,true,false] call BIS_fnc_holdActionAdd;
+        10,
+        0,
+        true,
+        false] call BIS_fnc_holdActionAdd;
     };
 };

@@ -1,3 +1,6 @@
+_uniform = BLUFORUNIFORMS call BIS_fnc_selectRandom;
+_helmet = BLUFORHELMETS call BIS_fnc_selectRandom;
+
 // SolidGames
 
 _unit addBackpack "B_Carryall_Base";
@@ -13,8 +16,8 @@ _unit addWeapon "ACE_Vector";
 removeBackpack _unit;
 
 // Uniform with items:
-_unit forceAddUniform "PBW_Uniform3K_fleck";
-_unit addItemToUniform 'ACE_RangeCard';
+_unit forceAddUniform _uniform;
+_unit addItemToUniform "ACE_RangeCard";
 
 // Vest with items:
 _unit addVest "BWA3_Vest_Marksman_Fleck";
@@ -24,7 +27,7 @@ for '_i' from 1 to 6 do { _unit addItemToVest 'BWA3_10Rnd_762x51_G28';};
 
 // Backpack with items:
 _unit addBackpack "BWA3_Kitbag_Fleck";
-_unit addHeadgear "PBW_Helm1_fleck_BO";
+_unit addHeadgear _helmet;
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";

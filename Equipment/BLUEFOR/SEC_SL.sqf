@@ -1,3 +1,5 @@
+_uniform = SECUNIFORMS call BIS_fnc_selectRandom;
+
 // SolidGames
 
 _unit addBackpack "B_Carryall_Base";
@@ -14,7 +16,7 @@ _unit addWeapon "mkk_B8_Binocular";
 removeBackpack _unit;
 
 // Uniform with items:
-_unit forceAddUniform "PBW_Uniform3K_tropen";
+_unit forceAddUniform _uniform;
 
 // Vest with items:
 _unit addVest "BWA3_Vest_JPC_Leader_Tropen";

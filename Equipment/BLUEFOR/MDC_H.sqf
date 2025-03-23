@@ -1,3 +1,6 @@
+_uniform = BLUFORUNIFORMS call BIS_fnc_selectRandom;
+_helmet = BLUFORHELMETS call BIS_fnc_selectRandom;
+
 // SolidGames
 
 _unit addBackpack "B_Carryall_Base";
@@ -11,7 +14,7 @@ _unit addPrimaryWeaponItem "rhsusf_acc_eotech_xps3";
 removeBackpack _unit;
 
 // Uniform with items:
-_unit forceAddUniform "PBW_Uniform3K_fleck";
+_unit forceAddUniform _uniform;
 
 // Vest with items:
 _unit addVest "BWA3_Vest_Medic_Fleck";
@@ -21,7 +24,7 @@ for '_i' from 1 to 2 do { _unit addItemToVest 'rhs_mag_an_m8hc';};
 
 // Backpack with items:
 _unit addBackpack "mkk_mr3000_bwmod_blue";
-_unit addHeadgear "PBW_Helm1_fleck_BO";
+_unit addHeadgear _helmet;
 
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
