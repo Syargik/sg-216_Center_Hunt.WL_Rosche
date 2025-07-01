@@ -15,7 +15,7 @@ _veh addItemCargoGlobal ['BWA3_200Rnd_556x45', 6];
 
 _veh addItemCargoGlobal ["rhs_mag_m67", 15];
 _veh addItemCargoGlobal ["rhs_mag_an_m8hc", 15];
-_veh addItemCargoGlobal ['mkk_pzf3_tandem', 2];
+_veh addItemCargoGlobal ['BWA3_PzF3_Tandem_Loaded', 2];
 _veh addItemCargoGlobal ['rhs_mag_M433_HEDP', 20];
 _veh addItemCargoGlobal ['rhs_mag_M441_HE', 10];
 
