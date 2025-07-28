@@ -17,3 +17,5 @@ _veh additemcargoGlobal ['ACE_suture', 20];
 _veh addItemCargoGlobal ['rhs_mag_rgd5', 10];
 _veh addItemCargoGlobal ['rhs_mag_rdg2_white', 10];
 _veh addItemCargoGlobal ['rhs_30Rnd_545x39_7N10_AK', 15];
+
+_veh addBackpackCargoGlobal ['tf_mr6000l_emr_RETRO', 2];

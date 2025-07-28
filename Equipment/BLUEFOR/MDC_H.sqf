@@ -26,6 +26,7 @@ for '_i' from 1 to 2 do { _unit addItemToVest 'rhs_mag_an_m8hc';};
 _unit addBackpack "mkk_mr3000_bwmod_blue";
 _unit addHeadgear _helmet;
 
+
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemRadio";

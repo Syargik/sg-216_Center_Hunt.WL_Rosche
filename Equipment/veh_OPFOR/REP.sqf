@@ -17,3 +17,5 @@ _veh addItemCargoGlobal ['rhs_mag_rdg2_white', 5];
 _veh addBackpackCargoGlobal ['rhs_rk_sht_30_emr', 5];
 
 _veh addItemCargoGlobal ['ToolKit', 5];
+
+_veh addBackpackCargoGlobal ['tf_mr6000l_emr_RETRO', 1];
